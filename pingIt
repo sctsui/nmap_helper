@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cat logIt.txt | while read line
+do
+	nmap -Pn $line
+
+# nmap -sS $line
+# ping $line
+done
